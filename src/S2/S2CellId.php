@@ -463,7 +463,7 @@ class S2CellId {
       if ($this->id == 0) {
         return "X";
       }
-      $hex = strtolower(dechex($this->id));
+      $hex = strtolower(dechex((int)$this->id));
       $sb = '';
       for ($i = strlen($hex); $i < 16; $i++) {
         $sb .= '0';
